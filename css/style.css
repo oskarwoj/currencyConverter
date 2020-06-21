@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://iili.io/J4MfR4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5px;
+  padding: 0px 0 125px 90px;
+}
+
+/* =============================================
+MAIN
+============================================= */
+.main {
+  width: 100%;
+  width: 400px;
+}
+/* =============================================
+HEADER
+============================================= */
+
+.header__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header__paragraph {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+/* =============================================
+FORM
+============================================= */
+.form__field,
+.form__select,
+.form__result {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+
+.form__button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
