@@ -1,6 +1,6 @@
 # CURRENCY CONVERTER
 
-## LIVE: [Github Pages version](https://oskarwoj.github.io/currencyConverter/)
+## LIVE: [Github Pages](https://oskarwoj.github.io/currencyConverter/)
 
 ## Used technologies:
 
