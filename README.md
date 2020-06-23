@@ -6,7 +6,7 @@
 
 - HTML ![HTML]()
 - CSS ![CSS]()
-- JavaScript ![JavaScript]()
+- JavaScript ![JavaScript](https://raw.githubusercontent.com/oskarwoj/currencyConverter/master/images/js_logo.jpg)
 
 ## Instruction & features:
 
