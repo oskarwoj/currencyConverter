@@ -4,9 +4,9 @@
 
 ## Used technologies:
 
-- HTML ![HTML]()
-- CSS ![CSS]()
-- JavaScript ![JavaScript](https://raw.githubusercontent.com/oskarwoj/currencyConverter/master/images/js_logo.jpg)
+- HTML
+- CSS
+- JavaScript
 
 ## Instruction & features:
 
