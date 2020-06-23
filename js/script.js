@@ -58,7 +58,7 @@
     const formElement = document.querySelector(".js-form");
     const swap = document.querySelector(".js-swap");
 
-    formElement.addEventListener("click", onFormSubmit);
+    formElement.addEventListener("submit", onFormSubmit);
     swap.addEventListener("click", changeValues);
   };
 
