@@ -1,24 +1,19 @@
-let formElement = document.querySelector(".js-form");
+const formElement = document.querySelector(".js-form");
 
-let amountElement = document.querySelector(".js-firstInput");
-
-let firstSelect = document.querySelector(".js-firstSelect");
-let secondSelect = document.querySelector(".js-secondSelect");
-
-let finalResult = document.querySelector(".js-result");
+const finalResult = document.querySelector(".js-result");
 
 formElement.addEventListener("click", (event) => {
   event.preventDefault();
 
-  let amount = amountElement.value;
-  let firstCurrency = firstSelect.value;
-  let secondCurrency = secondSelect.value;
+  const amount = document.querySelector(".js-firstInput").value;
+  const inputCurrencyName = document.querySelector(".js-firstSelect").value;
+  const outputCurrencyName = document.querySelector(".js-secondSelect").value;
 
-  let usdRate = 3.8922;
-  let eurRate = 4.399;
+  const usdRate = 3.8922;
+  const eurRate = 4.399;
   let plnValue;
 
-  switch (firstCurrency) {
+  switch (inputCurrencyName) {
     case "PLN":
       plnValue = +amount;
       break;
@@ -30,8 +25,8 @@ formElement.addEventListener("click", (event) => {
       plnValue = amount * eurRate;
       break;
   }
-
-  switch (secondCurrency) {
+  console.log(amount, inputCurrencyName, outputCurrencyName);
+  switch (outputCurrencyName) {
     case "PLN":
       result = plnValue;
       break;
@@ -46,10 +41,10 @@ formElement.addEventListener("click", (event) => {
   finalResult.innerText = result.toFixed(2);
 });
 
-let swap = document.querySelector(".js-swap");
+const swap = document.querySelector(".js-swap");
 
 swap.addEventListener("click", () => {
-  let temp = firstSelect.value;
-  firstSelect.value = secondSelect.value;
-  secondSelect.value = temp;
+  const temp = inputCurrencyName.value;
+  inputCurrencyName.value = outputCurrencyName.value;
+  outputCurrencyName.value = temp;
 });
