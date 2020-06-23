@@ -4,16 +4,16 @@
 
 ## Used technologies:
 
-- HTML
-- CSS
-- JavaScript
+- HTML ![HTML]()
+- CSS ![CSS]()
+- JavaScript ![JavaScript]()
 
-## Content and features:
+## Instruction & features:
 
-- ##### Choose FROM Currency
+1. Choose **FROM** Currency
 
-- ##### Choose TO Currency
+1. Choose **TO** Currency
 
-- ##### Click on Submit and check the results
+1. Click on **SUBMIT** and check the results
 
-- ##### Toy can also INVERT your selction
+1. You can also change your selection by clicking **INVERT** button
