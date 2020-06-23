@@ -1,19 +1,23 @@
 const formElement = document.querySelector(".js-form");
 
+const amountElement = document.querySelector(".js-firstInput");
+const inputCurrencyName = document.querySelector(".js-firstSelect");
+const outputCurrencyName = document.querySelector(".js-secondSelect");
+
 const finalResult = document.querySelector(".js-result");
 
 formElement.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const amount = document.querySelector(".js-firstInput").value;
-  const inputCurrencyName = document.querySelector(".js-firstSelect").value;
-  const outputCurrencyName = document.querySelector(".js-secondSelect").value;
+  const amount = amountElement.value;
+  const firstCurrency = inputCurrencyName.value;
+  const secondCurrency = outputCurrencyName.value;
 
   const usdRate = 3.8922;
   const eurRate = 4.399;
   let plnValue;
 
-  switch (inputCurrencyName) {
+  switch (firstCurrency) {
     case "PLN":
       plnValue = +amount;
       break;
@@ -25,8 +29,8 @@ formElement.addEventListener("click", (event) => {
       plnValue = amount * eurRate;
       break;
   }
-  console.log(amount, inputCurrencyName, outputCurrencyName);
-  switch (outputCurrencyName) {
+
+  switch (secondCurrency) {
     case "PLN":
       result = plnValue;
       break;
