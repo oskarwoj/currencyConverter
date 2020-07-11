@@ -3,8 +3,12 @@
   const secondCurrencyName = document.querySelector(".js-secondSelect");
 
   const calculateResult = (amount, firstCurrencyName, secondCurrencyName) => {
-    const usdRate = 3.8922;
-    const eurRate = 4.399;
+    const rates = {
+      usd: 3.8922,
+      eur: 4.399,
+    };
+
+    const { usd, eur } = rates;
 
     switch (firstCurrencyName) {
       case "PLN":
@@ -12,10 +16,10 @@
         break;
 
       case "USD":
-        plnValue = amount * usdRate;
+        plnValue = amount * usd;
         break;
       case "EUR":
-        plnValue = amount * eurRate;
+        plnValue = amount * eur;
         break;
     }
 
@@ -23,9 +27,9 @@
       case "PLN":
         return plnValue;
       case "USD":
-        return plnValue / usdRate;
+        return plnValue / usd;
       case "EUR":
-        return plnValue / eurRate;
+        return plnValue / eur;
     }
   };
 
@@ -51,7 +55,6 @@
     const temp = firstCurrencyName.value;
     firstCurrencyName.value = secondCurrencyName.value;
     secondCurrencyName.value = temp;
-    console.log(temp);
   };
 
   const init = () => {
